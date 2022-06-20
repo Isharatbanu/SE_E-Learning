@@ -50,3 +50,5 @@ C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E 
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.exe
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.pdb
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_Dashboard.resources
+C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_ViewUser.resources
+C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_AddUser.resources

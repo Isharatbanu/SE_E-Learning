@@ -33,17 +33,21 @@ namespace E_Learning_Platform
 
         private void buttonAddUser_Click(object sender, EventArgs e)
         {
-
+            uC_AddUser1.Visible = true;
+            uC_AddUser1.BringToFront();
         }
 
         private void buttonViewUser_Click(object sender, EventArgs e)
         {
-
+            uC_ViewUser1.Visible = true;
+            uC_ViewUser1.BringToFront();
         }
 
         private void Admin_Load(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = false;
+            uC_ViewUser1.Visible = false;
+            uC_AddUser1.Visible = false;
             buttonDashboard.PerformClick();
         }
 
