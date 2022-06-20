@@ -17,19 +17,14 @@ namespace E_Learning_Platform
         String Name_pattern = @"^([a-zA-Z\s]+$)";
         String Mobile_pattern = @"^[6-9]{1}[0-9]{9}$";
         String Mail_pattern = @"^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]";
-        String Num_pattern = @"^[1-9]+$";
+        //String Num_pattern = @"^[1-9]+$";
+        String Marks_pattern = "([0-9]*[.])?[0-9]+";
         String Aadhar_pattern = @"^[2-9]{1}[0-9]{11}$";
         public StudentDetailForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Homepage h = new Homepage();
-            h.Show();
-            this.Hide();
-        }
 
         private void buttonBrowse_Click(object sender, EventArgs e)
         {
@@ -253,7 +248,7 @@ namespace E_Learning_Platform
 
         private void textBoxSSC_Leave(object sender, EventArgs e)
         {
-            if (Regex.IsMatch(textBoxSSC.Text, Num_pattern) == false)
+            if (Regex.IsMatch(textBoxSSC.Text, Marks_pattern) == false)
             {
                 textBoxSSC.Focus();
                 errorProvider2.SetError(textBoxSSC, "Please enter Numbers only !!");
@@ -266,7 +261,7 @@ namespace E_Learning_Platform
 
         private void textBoxHSC_Leave(object sender, EventArgs e)
         {
-            if (Regex.IsMatch(textBoxHSC.Text, Num_pattern) == false)
+            if (Regex.IsMatch(textBoxHSC.Text, Marks_pattern) == false)
             {
                 textBoxHSC.Focus();
                 errorProvider2.SetError(textBoxHSC, "Please enter Numbers only !!");
@@ -342,14 +337,17 @@ namespace E_Learning_Platform
               "'"+comboBoxGender.SelectedItem.ToString()+"','"+textBoxFatherName.Text+"'," +
               "'"+textBoxMotherName.Text+ "','"+textMobile.Text+"','"+textEmail.Text+"'," +
               "'"+ComboBlood.SelectedItem.ToString()+"','"+textBoxAadhar.Text+ "'," +
-              "'"+textBoxNationalist.Text+"','"+textBoxSSC.Text+"','"+textBoxHSC.Text+"','"+pictureBoxPhoto.BackgroundImage+"')", con);
+              "'"+textBoxNationalist.Text+"','"+textBoxSSC.Text+"','"+textBoxHSC.Text+"'," +
+              "'"+pictureBoxPhoto.Image+"')", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
 
-            clearAll();
             ComboBlood.Text = String.Empty;
             comboBoxGender.Text = String.Empty;
+            pictureBoxPhoto.Image = null;
+            clearAll();
+           
             MessageBox.Show("Application Form successfully submitted !!", "Application Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
@@ -382,6 +380,13 @@ namespace E_Learning_Platform
             {
                 errorProvider2.Clear();
             }
+        }
+
+        private void ClickHere_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Homepage h = new Homepage();
+            h.Show();
+            this.Hide();
         }
     }
 }

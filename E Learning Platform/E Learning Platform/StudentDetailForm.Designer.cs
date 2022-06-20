@@ -53,7 +53,6 @@
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label12 = new System.Windows.Forms.Label();
@@ -78,6 +77,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.textBoxNationalist = new System.Windows.Forms.TextBox();
             this.ButtonSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.ClickHere = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -334,17 +334,6 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "HSC Percentage :";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Location = new System.Drawing.Point(769, 582);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 43);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -528,7 +517,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(171, 582);
+            this.label26.Location = new System.Drawing.Point(171, 579);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(19, 23);
             this.label26.TabIndex = 41;
@@ -584,13 +573,26 @@
             this.ButtonSubmit.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonSubmit.ForeColor = System.Drawing.Color.White;
             this.ButtonSubmit.HoverState.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.Location = new System.Drawing.Point(486, 582);
+            this.ButtonSubmit.Location = new System.Drawing.Point(498, 562);
             this.ButtonSubmit.Name = "ButtonSubmit";
             this.ButtonSubmit.ShadowDecoration.Parent = this.ButtonSubmit;
             this.ButtonSubmit.Size = new System.Drawing.Size(112, 43);
             this.ButtonSubmit.TabIndex = 46;
             this.ButtonSubmit.Text = "Submit";
             this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
+            // 
+            // ClickHere
+            // 
+            this.ClickHere.AutoSize = true;
+            this.ClickHere.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClickHere.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClickHere.Location = new System.Drawing.Point(472, 622);
+            this.ClickHere.Name = "ClickHere";
+            this.ClickHere.Size = new System.Drawing.Size(240, 23);
+            this.ClickHere.TabIndex = 47;
+            this.ClickHere.TabStop = true;
+            this.ClickHere.Text = "Click here.. To go to MainPage";
+            this.ClickHere.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ClickHere_LinkClicked);
             // 
             // StudentDetailForm
             // 
@@ -599,6 +601,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(886, 687);
             this.ControlBox = false;
+            this.Controls.Add(this.ClickHere);
             this.Controls.Add(this.ButtonSubmit);
             this.Controls.Add(this.textBoxNationalist);
             this.Controls.Add(this.label29);
@@ -621,7 +624,6 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBoxGender);
@@ -683,7 +685,6 @@
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Label label19;
@@ -708,5 +709,6 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private Guna.UI2.WinForms.Guna2Button ButtonSubmit;
+        private System.Windows.Forms.LinkLabel ClickHere;
     }
 }

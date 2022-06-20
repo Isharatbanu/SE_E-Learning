@@ -20,7 +20,8 @@ namespace E_Learning_Platform
 
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
-
+            uC_Dashboard1.Visible = true;
+            uC_Dashboard1.BringToFront();
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -36,6 +37,17 @@ namespace E_Learning_Platform
         }
 
         private void buttonViewUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = false;
+            buttonDashboard.PerformClick();
+        }
+
+        private void ButtonRefresh_Click(object sender, EventArgs e)
         {
 
         }

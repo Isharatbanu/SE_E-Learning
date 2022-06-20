@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -37,8 +38,11 @@
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.Administrator = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -176,25 +180,41 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_Dashboard1);
             this.panel2.Location = new System.Drawing.Point(312, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(972, 726);
+            this.panel2.Size = new System.Drawing.Size(1022, 726);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_Dashboard1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_Dashboard1.Location = new System.Drawing.Point(1, 1);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1018, 722);
+            this.uC_Dashboard1.TabIndex = 0;
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 726);
+            this.ClientSize = new System.Drawing.Size(1334, 726);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Admin";
+            this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -209,5 +229,7 @@
         private Guna.UI2.WinForms.Guna2Button buttonAddUser;
         private Guna.UI2.WinForms.Guna2Button buttonDashboard;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Admin_UC.UC_Dashboard uC_Dashboard1;
     }
 }
