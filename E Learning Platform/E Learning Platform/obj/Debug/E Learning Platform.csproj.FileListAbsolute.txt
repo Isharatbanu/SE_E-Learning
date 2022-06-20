@@ -1,0 +1,34 @@
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe.config
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.pdb
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.AssemblyReference.cache
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Form1.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Properties.Resources.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.GenerateResource.cache
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.CoreCompileInputs.cache
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.exe
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.pdb
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentDetailForm.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentLoginForm.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentRegister.resources
+C:\Users\Rahiman\source\repos\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Homepage.resources
+C:\SE Project\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe.config
+C:\SE Project\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe
+C:\SE Project\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.pdb
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.AssemblyReference.cache
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.SuggestedBindingRedirects.cache
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Form1.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Homepage.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Properties.Resources.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentDetailForm.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentLoginForm.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentRegister.resources
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.GenerateResource.cache
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.CoreCompileInputs.cache
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.exe
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.pdb
+C:\SE Project\E Learning Platform\E Learning Platform\bin\Debug\Guna.UI2.dll
+C:\SE Project\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.CopyComplete

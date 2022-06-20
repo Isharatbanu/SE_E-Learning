@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9fb0067a-a9e6-4f85-a3f9-434888fd0d39": {
+      "ProjectGuid": "9fb0067a-a9e6-4f85-a3f9-434888fd0d39",
+      "DisplayName": "E Learning Platform",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
