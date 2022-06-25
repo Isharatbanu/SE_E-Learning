@@ -121,9 +121,10 @@
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.PressedColor = System.Drawing.Color.White;
             this.buttonRefresh.ShadowDecoration.Parent = this.buttonRefresh;
-            this.buttonRefresh.Size = new System.Drawing.Size(48, 46);
+            this.buttonRefresh.Size = new System.Drawing.Size(45, 44);
             this.buttonRefresh.TabIndex = 15;
             this.buttonRefresh.UseTransparentBackground = true;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click_1);
             // 
             // pictureBox3
             // 
@@ -140,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.YellowGreen;
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
@@ -150,6 +151,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_Dashboard";
             this.Size = new System.Drawing.Size(1022, 726);
+            this.Load += new System.EventHandler(this.UC_Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

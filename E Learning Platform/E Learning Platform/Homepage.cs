@@ -16,6 +16,8 @@ namespace E_Learning_Platform
     {
         
         StudentRegister std = new StudentRegister();
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True");
+
         public Homepage()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace E_Learning_Platform
 
         private void AdminLoginButton_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
+            /* Admin a = new Admin();
             if ((AdminUsername.Text.Equals("Admin")) && (AdminPassword.Text.Equals("Pass")))
             {
                 MessageBox.Show("Login Successfull !!","Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -46,7 +48,51 @@ namespace E_Learning_Platform
             else
             {
                 MessageBox.Show("Please check your Username & Password !!", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Error);  //red cross
+            } */
+
+            Admin a = new Admin();
+            String user_name, pass_word;
+            user_name = AdminUsername.Text;
+            pass_word = AdminPassword.Text;
+
+            try
+            {
+                String qr = "SELECT * FROM Admin WHERE Username = '" + AdminUsername.Text + "'AND Password = '" + AdminPassword.Text + "' ";
+                SqlDataAdapter sda = new SqlDataAdapter(qr, conn);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if (dtable.Rows.Count > 0)
+                {
+                    user_name = AdminUsername.Text;
+                    pass_word = AdminPassword.Text;
+
+                    MessageBox.Show("Login Successfull!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    a.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Please check username & password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    AdminUsername.Clear();
+                    AdminPassword.Clear();
+                }
+
             }
+            catch
+            {
+                MessageBox.Show("Invalid login details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AdminUsername.Clear();
+                AdminPassword.Clear();
+
+                AdminUsername.Focus();
+            }
+            finally
+            {
+                conn.Close();
+            }
+
 
         }
 

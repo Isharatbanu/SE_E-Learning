@@ -31,20 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Administrator = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_ViewUser1 = new E_Learning_Platform.Admin_UC.UC_ViewUser();
-            this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
-            this.uC_AddUser1 = new E_Learning_Platform.Admin_UC.UC_AddUser();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonLogout = new Guna.UI2.WinForms.Guna2Button();
             this.buttonViewUser = new Guna.UI2.WinForms.Guna2Button();
             this.buttonAddUser = new Guna.UI2.WinForms.Guna2Button();
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.Administrator = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_AddUser1 = new E_Learning_Platform.Admin_UC.UC_AddUser();
+            this.uC_ViewUser1 = new E_Learning_Platform.Admin_UC.UC_ViewUser();
+            this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,6 +60,113 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 726);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(68, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 186);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonLogout
+            // 
+            this.buttonLogout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonLogout.CheckedState.Parent = this.buttonLogout;
+            this.buttonLogout.CustomImages.Parent = this.buttonLogout;
+            this.buttonLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonLogout.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.ForeColor = System.Drawing.Color.White;
+            this.buttonLogout.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.buttonLogout.HoverState.CustomBorderColor = System.Drawing.Color.Black;
+            this.buttonLogout.HoverState.FillColor = System.Drawing.Color.White;
+            this.buttonLogout.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonLogout.HoverState.Parent = this.buttonLogout;
+            this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
+            this.buttonLogout.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonLogout.Location = new System.Drawing.Point(68, 609);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.PressedColor = System.Drawing.Color.Beige;
+            this.buttonLogout.ShadowDecoration.Parent = this.buttonLogout;
+            this.buttonLogout.Size = new System.Drawing.Size(180, 45);
+            this.buttonLogout.TabIndex = 4;
+            this.buttonLogout.Text = "Logout";
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
+            // buttonViewUser
+            // 
+            this.buttonViewUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonViewUser.CheckedState.Parent = this.buttonViewUser;
+            this.buttonViewUser.CustomImages.Parent = this.buttonViewUser;
+            this.buttonViewUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonViewUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewUser.ForeColor = System.Drawing.Color.White;
+            this.buttonViewUser.HoverState.BorderColor = System.Drawing.Color.SeaShell;
+            this.buttonViewUser.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonViewUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonViewUser.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonViewUser.HoverState.Parent = this.buttonViewUser;
+            this.buttonViewUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewUser.Image")));
+            this.buttonViewUser.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonViewUser.Location = new System.Drawing.Point(68, 515);
+            this.buttonViewUser.Name = "buttonViewUser";
+            this.buttonViewUser.PressedColor = System.Drawing.Color.Beige;
+            this.buttonViewUser.ShadowDecoration.Color = System.Drawing.SystemColors.WindowText;
+            this.buttonViewUser.ShadowDecoration.Parent = this.buttonViewUser;
+            this.buttonViewUser.Size = new System.Drawing.Size(180, 45);
+            this.buttonViewUser.TabIndex = 3;
+            this.buttonViewUser.Text = "View User";
+            this.buttonViewUser.Click += new System.EventHandler(this.buttonViewUser_Click);
+            // 
+            // buttonAddUser
+            // 
+            this.buttonAddUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonAddUser.CheckedState.Parent = this.buttonAddUser;
+            this.buttonAddUser.CustomImages.Parent = this.buttonAddUser;
+            this.buttonAddUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonAddUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.ForeColor = System.Drawing.Color.White;
+            this.buttonAddUser.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.buttonAddUser.HoverState.CustomBorderColor = System.Drawing.Color.Black;
+            this.buttonAddUser.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonAddUser.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonAddUser.HoverState.Parent = this.buttonAddUser;
+            this.buttonAddUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Image")));
+            this.buttonAddUser.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonAddUser.Location = new System.Drawing.Point(68, 418);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.PressedColor = System.Drawing.Color.Beige;
+            this.buttonAddUser.ShadowDecoration.Parent = this.buttonAddUser;
+            this.buttonAddUser.Size = new System.Drawing.Size(180, 45);
+            this.buttonAddUser.TabIndex = 2;
+            this.buttonAddUser.Text = "Add User";
+            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
+            // 
+            // buttonDashboard
+            // 
+            this.buttonDashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonDashboard.CheckedState.Parent = this.buttonDashboard;
+            this.buttonDashboard.CustomImages.Parent = this.buttonDashboard;
+            this.buttonDashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonDashboard.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
+            this.buttonDashboard.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.buttonDashboard.HoverState.CustomBorderColor = System.Drawing.Color.Black;
+            this.buttonDashboard.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonDashboard.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonDashboard.HoverState.Parent = this.buttonDashboard;
+            this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
+            this.buttonDashboard.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonDashboard.Location = new System.Drawing.Point(68, 325);
+            this.buttonDashboard.Name = "buttonDashboard";
+            this.buttonDashboard.PressedColor = System.Drawing.Color.Beige;
+            this.buttonDashboard.ShadowDecoration.Parent = this.buttonDashboard;
+            this.buttonDashboard.Size = new System.Drawing.Size(180, 45);
+            this.buttonDashboard.TabIndex = 0;
+            this.buttonDashboard.Text = "Dashboard";
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // Administrator
             // 
@@ -87,6 +194,16 @@
             // 
             this.guna2Elipse1.TargetControl = this.panel2;
             // 
+            // uC_AddUser1
+            // 
+            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
+            this.uC_AddUser1.Font = new System.Drawing.Font("Sanskrit Text", 22.2F, System.Drawing.FontStyle.Bold);
+            this.uC_AddUser1.Location = new System.Drawing.Point(0, 0);
+            this.uC_AddUser1.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1022, 726);
+            this.uC_AddUser1.TabIndex = 2;
+            // 
             // uC_ViewUser1
             // 
             this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
@@ -104,121 +221,6 @@
             this.uC_Dashboard1.Size = new System.Drawing.Size(1018, 722);
             this.uC_Dashboard1.TabIndex = 0;
             // 
-            // uC_AddUser1
-            // 
-            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
-            this.uC_AddUser1.Location = new System.Drawing.Point(0, 0);
-            this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1022, 726);
-            this.uC_AddUser1.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(68, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // buttonLogout
-            // 
-            this.buttonLogout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.buttonLogout.CheckedState.Parent = this.buttonLogout;
-            this.buttonLogout.CustomImages.Parent = this.buttonLogout;
-            this.buttonLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonLogout.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogout.ForeColor = System.Drawing.Color.White;
-            this.buttonLogout.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.buttonLogout.HoverState.CustomBorderColor = System.Drawing.Color.Black;
-            this.buttonLogout.HoverState.FillColor = System.Drawing.Color.White;
-            this.buttonLogout.HoverState.ForeColor = System.Drawing.Color.Teal;
-            this.buttonLogout.HoverState.Parent = this.buttonLogout;
-            this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
-            this.buttonLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonLogout.Location = new System.Drawing.Point(68, 609);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.PressedColor = System.Drawing.Color.Beige;
-            this.buttonLogout.ShadowDecoration.Parent = this.buttonLogout;
-            this.buttonLogout.Size = new System.Drawing.Size(180, 45);
-            this.buttonLogout.TabIndex = 4;
-            this.buttonLogout.Text = "Logout";
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
-            // 
-            // buttonViewUser
-            // 
-            this.buttonViewUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.buttonViewUser.CheckedState.Parent = this.buttonViewUser;
-            this.buttonViewUser.CustomImages.Parent = this.buttonViewUser;
-            this.buttonViewUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonViewUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonViewUser.ForeColor = System.Drawing.Color.White;
-            this.buttonViewUser.HoverState.BorderColor = System.Drawing.Color.SeaShell;
-            this.buttonViewUser.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.buttonViewUser.HoverState.FillColor = System.Drawing.Color.White;
-            this.buttonViewUser.HoverState.ForeColor = System.Drawing.Color.Teal;
-            this.buttonViewUser.HoverState.Parent = this.buttonViewUser;
-            this.buttonViewUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewUser.Image")));
-            this.buttonViewUser.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonViewUser.Location = new System.Drawing.Point(68, 515);
-            this.buttonViewUser.Name = "buttonViewUser";
-            this.buttonViewUser.PressedColor = System.Drawing.Color.Beige;
-            this.buttonViewUser.ShadowDecoration.Color = System.Drawing.SystemColors.WindowText;
-            this.buttonViewUser.ShadowDecoration.Parent = this.buttonViewUser;
-            this.buttonViewUser.Size = new System.Drawing.Size(180, 45);
-            this.buttonViewUser.TabIndex = 3;
-            this.buttonViewUser.Text = "View User";
-            this.buttonViewUser.Click += new System.EventHandler(this.buttonViewUser_Click);
-            // 
-            // buttonAddUser
-            // 
-            this.buttonAddUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.buttonAddUser.CheckedState.Parent = this.buttonAddUser;
-            this.buttonAddUser.CustomImages.Parent = this.buttonAddUser;
-            this.buttonAddUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonAddUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddUser.ForeColor = System.Drawing.Color.White;
-            this.buttonAddUser.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.buttonAddUser.HoverState.CustomBorderColor = System.Drawing.Color.Black;
-            this.buttonAddUser.HoverState.FillColor = System.Drawing.Color.White;
-            this.buttonAddUser.HoverState.ForeColor = System.Drawing.Color.Teal;
-            this.buttonAddUser.HoverState.Parent = this.buttonAddUser;
-            this.buttonAddUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Image")));
-            this.buttonAddUser.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonAddUser.Location = new System.Drawing.Point(68, 418);
-            this.buttonAddUser.Name = "buttonAddUser";
-            this.buttonAddUser.PressedColor = System.Drawing.Color.Beige;
-            this.buttonAddUser.ShadowDecoration.Parent = this.buttonAddUser;
-            this.buttonAddUser.Size = new System.Drawing.Size(180, 45);
-            this.buttonAddUser.TabIndex = 2;
-            this.buttonAddUser.Text = "Add User";
-            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
-            // 
-            // buttonDashboard
-            // 
-            this.buttonDashboard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.buttonDashboard.CheckedState.Parent = this.buttonDashboard;
-            this.buttonDashboard.CustomImages.Parent = this.buttonDashboard;
-            this.buttonDashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonDashboard.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
-            this.buttonDashboard.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.buttonDashboard.HoverState.CustomBorderColor = System.Drawing.Color.Black;
-            this.buttonDashboard.HoverState.FillColor = System.Drawing.Color.White;
-            this.buttonDashboard.HoverState.ForeColor = System.Drawing.Color.Teal;
-            this.buttonDashboard.HoverState.Parent = this.buttonDashboard;
-            this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
-            this.buttonDashboard.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonDashboard.Location = new System.Drawing.Point(68, 325);
-            this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.PressedColor = System.Drawing.Color.Beige;
-            this.buttonDashboard.ShadowDecoration.Parent = this.buttonDashboard;
-            this.buttonDashboard.Size = new System.Drawing.Size(180, 45);
-            this.buttonDashboard.TabIndex = 0;
-            this.buttonDashboard.Text = "Dashboard";
-            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
-            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,8 +235,8 @@
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
