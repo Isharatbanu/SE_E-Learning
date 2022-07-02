@@ -315,7 +315,7 @@ namespace E_Learning_Platform
         }
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-8V3S77O;Initial Catalog=ELearning; Integrated Security=True");
             SqlCommand cmd = new SqlCommand(@"INSERT INTO [dbo].[StudentDetails]
            ([Firstname]
            ,[Middlename]

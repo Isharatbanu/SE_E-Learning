@@ -16,7 +16,8 @@ namespace E_Learning_Platform
     {
         
         StudentRegister std = new StudentRegister();
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-8V3S77O;Initial Catalog=ELearning; Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True");
 
         public Homepage()
         {
@@ -51,48 +52,67 @@ namespace E_Learning_Platform
             } */
 
             Admin a = new Admin();
-            String user_name, pass_word;
-            user_name = AdminUsername.Text;
-            pass_word = AdminPassword.Text;
+            // String user_name, pass_word;
+            //user_name = AdminUsername.Text;
+            //pass_word = AdminPassword.Text;
+
+            /*
+             String qr = "SELECT * FROM Admin WHERE Username = '" + AdminUsername.Text.Trim() + "'AND Password = '" + AdminPassword.Text.Trim() + "' ";
+            SqlDataAdapter sda = new SqlDataAdapter(qr, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if(dt.Rows.Count == 1)
+            {
+                MessageBox.Show("Login Successfull!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                a.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
+             */
 
             try
             {
-                String qr = "SELECT * FROM Admin WHERE Username = '" + AdminUsername.Text + "'AND Password = '" + AdminPassword.Text + "' ";
-                SqlDataAdapter sda = new SqlDataAdapter(qr, conn);
+                 String qr = "SELECT * FROM Admin WHERE Username = '" + AdminUsername.Text + "'AND Password = '" + AdminPassword.Text + "' ";
+                 SqlDataAdapter sda = new SqlDataAdapter(qr, conn);
 
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
+                 DataTable dtable = new DataTable();
+                 sda.Fill(dtable);
 
-                if (dtable.Rows.Count > 0)
-                {
-                    user_name = AdminUsername.Text;
-                    pass_word = AdminPassword.Text;
+                 if (dtable.Rows.Count > 0)
+                 {
+                     //user_name = AdminUsername.Text;
+                     //pass_word = AdminPassword.Text;
 
-                    MessageBox.Show("Login Successfull!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    a.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Please check username & password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    AdminUsername.Clear();
-                    AdminPassword.Clear();
-                }
+                     MessageBox.Show("Login Successfull!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     a.Show();
+                     this.Hide();
+                 }
+                 else
+                 {
+                     MessageBox.Show("Please check username & password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     AdminUsername.Clear();
+                     AdminPassword.Clear();
+                 }
 
-            }
-            catch
-            {
-                MessageBox.Show("Invalid login details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                AdminUsername.Clear();
-                AdminPassword.Clear();
+             }
+             catch
+             {
+                 MessageBox.Show("Invalid login details!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 AdminUsername.Clear();
+                 AdminPassword.Clear();
 
-                AdminUsername.Focus();
-            }
-            finally
-            {
-                conn.Close();
-            }
+                 AdminUsername.Focus();
+             }
+             finally
+             {
+                 conn.Close();
+             }
+            
 
+            
 
         }
 
