@@ -13,8 +13,7 @@ namespace E_Learning_Platform
     {
         protected SqlConnection getConnection()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True";
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-8V3S77O;Initial Catalog=ELearning; Integrated Security=True");
             return con;
 
         }

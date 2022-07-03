@@ -48,13 +48,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.ButtonFeedback = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonStudentCorner = new Guna.UI2.WinForms.Guna2Button();
             this.buttonStudentRegistration = new Guna.UI2.WinForms.Guna2Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.LoginButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.eLearning1 = new E_Learning_Platform.ELearning();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonExit)).BeginInit();
@@ -62,16 +61,16 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearning1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(-4, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(402, 66);
+            this.panel2.Size = new System.Drawing.Size(409, 70);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -109,6 +108,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.buttonShow);
             this.panel4.Controls.Add(this.buttonHide);
@@ -123,9 +123,9 @@
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(4, 426);
+            this.panel4.Location = new System.Drawing.Point(1, 426);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(408, 334);
+            this.panel4.Size = new System.Drawing.Size(411, 334);
             this.panel4.TabIndex = 1;
             // 
             // buttonShow
@@ -268,20 +268,61 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Teal;
-            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.ButtonFeedback);
+            this.panel5.Controls.Add(this.buttonStudentCorner);
             this.panel5.Controls.Add(this.buttonStudentRegistration);
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.LoginButton);
             this.panel5.Location = new System.Drawing.Point(1, 272);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1152, 105);
+            this.panel5.Size = new System.Drawing.Size(1152, 79);
             this.panel5.TabIndex = 1;
+            // 
+            // ButtonFeedback
+            // 
+            this.ButtonFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonFeedback.BorderColor = System.Drawing.Color.Teal;
+            this.ButtonFeedback.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.ButtonFeedback.CheckedState.Parent = this.ButtonFeedback;
+            this.ButtonFeedback.CustomImages.Parent = this.ButtonFeedback;
+            this.ButtonFeedback.FillColor = System.Drawing.Color.Teal;
+            this.ButtonFeedback.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold);
+            this.ButtonFeedback.ForeColor = System.Drawing.Color.White;
+            this.ButtonFeedback.HoverState.Parent = this.ButtonFeedback;
+            this.ButtonFeedback.Image = ((System.Drawing.Image)(resources.GetObject("ButtonFeedback.Image")));
+            this.ButtonFeedback.ImageSize = new System.Drawing.Size(35, 35);
+            this.ButtonFeedback.Location = new System.Drawing.Point(927, 18);
+            this.ButtonFeedback.Name = "ButtonFeedback";
+            this.ButtonFeedback.ShadowDecoration.Parent = this.ButtonFeedback;
+            this.ButtonFeedback.Size = new System.Drawing.Size(200, 45);
+            this.ButtonFeedback.TabIndex = 6;
+            this.ButtonFeedback.Text = "Feedback";
+            this.ButtonFeedback.Click += new System.EventHandler(this.ButtonFeedback_Click);
+            // 
+            // buttonStudentCorner
+            // 
+            this.buttonStudentCorner.BackColor = System.Drawing.Color.Transparent;
+            this.buttonStudentCorner.BorderColor = System.Drawing.Color.Teal;
+            this.buttonStudentCorner.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonStudentCorner.CheckedState.Parent = this.buttonStudentCorner;
+            this.buttonStudentCorner.CustomImages.Parent = this.buttonStudentCorner;
+            this.buttonStudentCorner.FillColor = System.Drawing.Color.Teal;
+            this.buttonStudentCorner.Font = new System.Drawing.Font("Segoe UI Symbol", 13.8F, System.Drawing.FontStyle.Bold);
+            this.buttonStudentCorner.ForeColor = System.Drawing.Color.White;
+            this.buttonStudentCorner.HoverState.Parent = this.buttonStudentCorner;
+            this.buttonStudentCorner.Image = ((System.Drawing.Image)(resources.GetObject("buttonStudentCorner.Image")));
+            this.buttonStudentCorner.ImageSize = new System.Drawing.Size(50, 50);
+            this.buttonStudentCorner.Location = new System.Drawing.Point(347, 16);
+            this.buttonStudentCorner.Name = "buttonStudentCorner";
+            this.buttonStudentCorner.ShadowDecoration.Parent = this.buttonStudentCorner;
+            this.buttonStudentCorner.Size = new System.Drawing.Size(258, 60);
+            this.buttonStudentCorner.TabIndex = 5;
+            this.buttonStudentCorner.Text = "StudentCorner";
+            this.buttonStudentCorner.Click += new System.EventHandler(this.buttonStudentCorner_Click);
             // 
             // buttonStudentRegistration
             // 
             this.buttonStudentRegistration.BackColor = System.Drawing.Color.Transparent;
             this.buttonStudentRegistration.BorderColor = System.Drawing.Color.Teal;
+            this.buttonStudentRegistration.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.buttonStudentRegistration.CheckedState.Parent = this.buttonStudentRegistration;
             this.buttonStudentRegistration.CustomImages.Parent = this.buttonStudentRegistration;
             this.buttonStudentRegistration.FillColor = System.Drawing.Color.Teal;
@@ -290,59 +331,13 @@
             this.buttonStudentRegistration.HoverState.Parent = this.buttonStudentRegistration;
             this.buttonStudentRegistration.Image = ((System.Drawing.Image)(resources.GetObject("buttonStudentRegistration.Image")));
             this.buttonStudentRegistration.ImageSize = new System.Drawing.Size(35, 35);
-            this.buttonStudentRegistration.Location = new System.Drawing.Point(111, 29);
+            this.buttonStudentRegistration.Location = new System.Drawing.Point(127, 18);
             this.buttonStudentRegistration.Name = "buttonStudentRegistration";
             this.buttonStudentRegistration.ShadowDecoration.Parent = this.buttonStudentRegistration;
             this.buttonStudentRegistration.Size = new System.Drawing.Size(200, 45);
             this.buttonStudentRegistration.TabIndex = 3;
             this.buttonStudentRegistration.Text = "Registration";
             this.buttonStudentRegistration.Click += new System.EventHandler(this.StudentRegisteration);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Teal;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(948, 15);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(192, 74);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Feedback";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(551, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(285, 74);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Student Corner";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.BackColor = System.Drawing.Color.Teal;
-            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Image = ((System.Drawing.Image)(resources.GetObject("LoginButton.Image")));
-            this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LoginButton.Location = new System.Drawing.Point(363, 19);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(163, 66);
-            this.LoginButton.TabIndex = 2;
-            this.LoginButton.Text = "Login";
-            this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // errorProvider1
             // 
@@ -357,15 +352,10 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // eLearning1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 56);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.eLearning1.DataSetName = "ELearning";
+            this.eLearning1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Homepage
             // 
@@ -389,7 +379,7 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearning1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,9 +390,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -419,7 +406,9 @@
         private System.Windows.Forms.Button buttonHide;
         private System.Windows.Forms.PictureBox buttonExit;
         private Guna.UI2.WinForms.Guna2Button buttonStudentRegistration;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private ELearning eLearning1;
+        private Guna.UI2.WinForms.Guna2Button ButtonFeedback;
+        private Guna.UI2.WinForms.Guna2Button buttonStudentCorner;
     }
 }
 

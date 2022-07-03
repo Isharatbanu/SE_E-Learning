@@ -38,10 +38,10 @@
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.Administrator = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_AddUser1 = new E_Learning_Platform.Admin_UC.UC_AddUser();
             this.uC_ViewUser1 = new E_Learning_Platform.Admin_UC.UC_ViewUser();
             this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -182,50 +182,50 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_Dashboard1);
             this.panel2.Controls.Add(this.uC_AddUser1);
             this.panel2.Controls.Add(this.uC_ViewUser1);
-            this.panel2.Controls.Add(this.uC_Dashboard1);
-            this.panel2.Location = new System.Drawing.Point(312, 0);
+            this.panel2.Location = new System.Drawing.Point(303, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1022, 726);
+            this.panel2.Size = new System.Drawing.Size(1179, 726);
             this.panel2.TabIndex = 1;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel2;
             // 
             // uC_AddUser1
             // 
             this.uC_AddUser1.BackColor = System.Drawing.Color.White;
-            this.uC_AddUser1.Font = new System.Drawing.Font("Sanskrit Text", 22.2F, System.Drawing.FontStyle.Bold);
+            this.uC_AddUser1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
             this.uC_AddUser1.Location = new System.Drawing.Point(0, 0);
             this.uC_AddUser1.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1022, 726);
+            this.uC_AddUser1.Size = new System.Drawing.Size(1176, 726);
             this.uC_AddUser1.TabIndex = 2;
             // 
             // uC_ViewUser1
             // 
             this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 3);
             this.uC_ViewUser1.Name = "uC_ViewUser1";
-            this.uC_ViewUser1.Size = new System.Drawing.Size(1022, 726);
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1176, 723);
             this.uC_ViewUser1.TabIndex = 1;
             // 
             // uC_Dashboard1
             // 
             this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
             this.uC_Dashboard1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uC_Dashboard1.Location = new System.Drawing.Point(1, 1);
+            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 3);
             this.uC_Dashboard1.Name = "uC_Dashboard1";
-            this.uC_Dashboard1.Size = new System.Drawing.Size(1018, 722);
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1179, 722);
             this.uC_Dashboard1.TabIndex = 0;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 726);
+            this.ClientSize = new System.Drawing.Size(1482, 726);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

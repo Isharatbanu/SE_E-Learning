@@ -16,6 +16,7 @@ namespace E_Learning_Platform
     {
         
         StudentRegister std = new StudentRegister();
+        StudentCorner sc = new StudentCorner();
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-8V3S77O;Initial Catalog=ELearning; Integrated Security=True");
         //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-6OCFE43M;Initial Catalog=ELearning;Integrated Security=True");
 
@@ -210,9 +211,20 @@ namespace E_Learning_Platform
             }
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
-        {
+        
 
+        private void buttonStudentCorner_Click(object sender, EventArgs e)
+        {
+            sc.Show();
+            this.Hide();
+        }
+
+        private void ButtonFeedback_Click(object sender, EventArgs e)
+        {
+            Feedback f = new Feedback();
+            f.Show();
+            this.Hide();
+           
         }
     }
 }

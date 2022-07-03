@@ -52,18 +52,20 @@ C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E 
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_Dashboard.resources
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_ViewUser.resources
 C:\SE Project\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_AddUser.resources
-D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe.config
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.pdb
+D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\bin\Debug\E Learning Platform.exe.config
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.AssemblyReference.cache
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.SuggestedBindingRedirects.cache
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_AddUser.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_Dashboard.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Admin_UC.UC_ViewUser.resources
+D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Feedback.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Form1.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Homepage.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.Properties.Resources.resources
+D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentCorner.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentDetailForm.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentLoginForm.resources
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.StudentRegister.resources

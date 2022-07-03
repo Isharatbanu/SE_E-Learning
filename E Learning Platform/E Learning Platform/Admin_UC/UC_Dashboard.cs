@@ -14,6 +14,8 @@ namespace E_Learning_Platform.Admin_UC
     public partial class UC_Dashboard : UserControl
     {
         function fn = new function();
+        DataSet ds;
+        String query_StudentRegister, query_StudentDetails;
         public UC_Dashboard()
         {
             InitializeComponent();
@@ -35,27 +37,17 @@ namespace E_Learning_Platform.Admin_UC
         }*/
         private void UC_Dashboard_Load(object sender, EventArgs e)
         {
-            /* DataSet ds;
-            String query = "Select count(*) from StudentRegister";
-            ds = fn.getData(query);
-            setLabel(ds, labelRegistered); */
-            
+
+            query_StudentRegister = "Select count(*) from StudentRegister";
+            ds = fn.getData(query_StudentRegister);
+            setLabel(ds, labelRegistered);
+
+            query_StudentDetails = "Select count(*) from StudentDetails";
+            ds = fn.getData(query_StudentDetails);
+            setLabel(ds, labelApplied);
         }
 
-        private void buttonRefresh_Click_1(object sender, EventArgs e)
-        {
-           /* int count = 0;
-            SqlConnection con = new SqlConnection("Data Source = LAPTOP - 6OCFE43M; Initial Catalog = ELearning; Integrated Security = True");
-            SqlCommand cmd = new SqlCommand("Select count(*) from StudentRegister", con);
-            
-            con.Open(); cmd.ExecuteNonQuery();
-
-            count = Convert.ToInt32(cmd.ExecuteScalar());
-            labelRegistered.Text = count.ToString();
-           // con.Close();*/
-        }
-
-        /* private void setLabel(DataSet ds, Label lbl)
+         private void setLabel(DataSet ds, Label lbl)
          {
              if (ds.Tables[0].Rows.Count != 0)
              {
@@ -65,7 +57,7 @@ namespace E_Learning_Platform.Admin_UC
              {
                  lbl.Text = "0";
              }
-         }*/
+         }
 
 
 

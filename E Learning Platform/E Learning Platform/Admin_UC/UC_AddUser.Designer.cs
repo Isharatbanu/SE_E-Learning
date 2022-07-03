@@ -42,20 +42,20 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(405, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 56);
+            this.label1.Size = new System.Drawing.Size(182, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add User";
             // 
             // UC_AddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 56F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Sanskrit Text", 22.2F, System.Drawing.FontStyle.Bold);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.Name = "UC_AddUser";
-            this.Size = new System.Drawing.Size(1022, 726);
+            this.Size = new System.Drawing.Size(1176, 726);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace E_Learning_Platform
 {
-    public partial class Form1 : Form
+    public partial class StudentCorner : Form
     {
-        Homepage h = new Homepage();
-        public Form1()
+        
+        public StudentCorner()
         {
             InitializeComponent();
         }
 
-        private void buttonGo_Click(object sender, EventArgs e)
+        private void HomeButton_Click(object sender, EventArgs e)
         {
+            Homepage h = new Homepage();
             h.Show();
             this.Hide();
         }
