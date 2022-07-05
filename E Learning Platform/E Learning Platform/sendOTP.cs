@@ -61,7 +61,7 @@ namespace E_Learning_Platform
             if (OTPCode == (TextboxOTPCode.Text).ToString())
             {
                 to = TextboxOTPEmail.Text;
-                MessageBox.Show("Password changed!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Password changed!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ChangePassword cp = new ChangePassword();
                 cp.Show();
                 this.Hide();
