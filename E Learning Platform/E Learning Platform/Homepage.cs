@@ -226,5 +226,13 @@ namespace E_Learning_Platform
             this.Hide();
            
         }
+
+        private void ForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sendOTP sotp = new sendOTP();
+            sotp.Show();
+            this.Hide();
+
+        }
     }
 }

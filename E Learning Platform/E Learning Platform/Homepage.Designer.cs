@@ -187,6 +187,7 @@
             this.ForgetPassword.TabIndex = 7;
             this.ForgetPassword.TabStop = true;
             this.ForgetPassword.Text = "Forget Password ?";
+            this.ForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ForgetPassword_LinkClicked);
             // 
             // AdminLoginButton
             // 

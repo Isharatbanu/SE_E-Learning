@@ -74,3 +74,5 @@ D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.csproj.CopyComplete
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.exe
 D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E Learning Platform.pdb
+D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.sendOTP.resources
+D:\TY\Project\SE\SE_E-Learning\E Learning Platform\E Learning Platform\obj\Debug\E_Learning_Platform.ChangePassword.resources
