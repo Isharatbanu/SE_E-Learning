@@ -49,7 +49,7 @@
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
             this.label.ForeColor = System.Drawing.Color.Teal;
-            this.label.Location = new System.Drawing.Point(54, 39);
+            this.label.Location = new System.Drawing.Point(32, 27);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(197, 42);
             this.label.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(344, 123);
+            this.label1.Location = new System.Drawing.Point(173, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 2;
@@ -75,7 +75,6 @@
             // DataGridViewUser
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.DataGridViewUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridViewUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DataGridViewUser.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -83,7 +82,7 @@
             this.DataGridViewUser.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightGreen;
@@ -149,14 +148,14 @@
             this.SearchBox.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold);
             this.SearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SearchBox.HoverState.Parent = this.SearchBox;
-            this.SearchBox.Location = new System.Drawing.Point(324, 156);
+            this.SearchBox.Location = new System.Drawing.Point(334, 102);
             this.SearchBox.Margin = new System.Windows.Forms.Padding(4);
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.PasswordChar = '\0';
             this.SearchBox.PlaceholderText = "Search........................................";
             this.SearchBox.SelectedText = "";
             this.SearchBox.ShadowDecoration.Parent = this.SearchBox;
-            this.SearchBox.Size = new System.Drawing.Size(467, 42);
+            this.SearchBox.Size = new System.Drawing.Size(711, 42);
             this.SearchBox.TabIndex = 7;
             this.SearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
@@ -180,11 +179,12 @@
             this.ButtonDelete.TabIndex = 8;
             this.ButtonDelete.Text = "Delete";
             this.ButtonDelete.UseTransparentBackground = true;
+            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // Refresh
             // 
             this.Refresh.Image = ((System.Drawing.Image)(resources.GetObject("Refresh.Image")));
-            this.Refresh.Location = new System.Drawing.Point(257, 27);
+            this.Refresh.Location = new System.Drawing.Point(255, 18);
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(64, 64);
             this.Refresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

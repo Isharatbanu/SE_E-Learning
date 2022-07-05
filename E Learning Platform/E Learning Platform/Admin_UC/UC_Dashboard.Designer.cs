@@ -54,7 +54,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(53, 33);
+            this.label2.Location = new System.Drawing.Point(78, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 42);
             this.label2.TabIndex = 14;
@@ -119,7 +119,7 @@
             this.buttonRefresh.HoverState.Parent = this.buttonRefresh;
             this.buttonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.Image")));
             this.buttonRefresh.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonRefresh.Location = new System.Drawing.Point(309, 51);
+            this.buttonRefresh.Location = new System.Drawing.Point(350, 76);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.PressedColor = System.Drawing.Color.White;
             this.buttonRefresh.ShadowDecoration.Parent = this.buttonRefresh;
@@ -131,7 +131,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(282, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(323, 58);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(95, 81);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

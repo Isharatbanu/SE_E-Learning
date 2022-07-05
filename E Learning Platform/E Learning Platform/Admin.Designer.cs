@@ -38,10 +38,11 @@
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.Administrator = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
             this.uC_AddUser1 = new E_Learning_Platform.Admin_UC.UC_AddUser();
             this.uC_ViewUser1 = new E_Learning_Platform.Admin_UC.UC_ViewUser();
-            this.uC_Dashboard1 = new E_Learning_Platform.Admin_UC.UC_Dashboard();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.userNameLabel);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.buttonLogout);
             this.panel1.Controls.Add(this.buttonViewUser);
@@ -109,24 +111,25 @@
             this.buttonViewUser.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.buttonViewUser.HoverState.Parent = this.buttonViewUser;
             this.buttonViewUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewUser.Image")));
-            this.buttonViewUser.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonViewUser.Location = new System.Drawing.Point(68, 515);
+            this.buttonViewUser.ImageSize = new System.Drawing.Size(50, 50);
+            this.buttonViewUser.Location = new System.Drawing.Point(40, 500);
             this.buttonViewUser.Name = "buttonViewUser";
             this.buttonViewUser.PressedColor = System.Drawing.Color.Beige;
             this.buttonViewUser.ShadowDecoration.Color = System.Drawing.SystemColors.WindowText;
             this.buttonViewUser.ShadowDecoration.Parent = this.buttonViewUser;
-            this.buttonViewUser.Size = new System.Drawing.Size(180, 45);
+            this.buttonViewUser.Size = new System.Drawing.Size(208, 60);
             this.buttonViewUser.TabIndex = 3;
             this.buttonViewUser.Text = "View User";
             this.buttonViewUser.Click += new System.EventHandler(this.buttonViewUser_Click);
             // 
             // buttonAddUser
             // 
+            this.buttonAddUser.BackColor = System.Drawing.Color.Transparent;
             this.buttonAddUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.buttonAddUser.CheckedState.Parent = this.buttonAddUser;
             this.buttonAddUser.CustomImages.Parent = this.buttonAddUser;
             this.buttonAddUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonAddUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold);
             this.buttonAddUser.ForeColor = System.Drawing.Color.White;
             this.buttonAddUser.HoverState.BorderColor = System.Drawing.Color.Black;
             this.buttonAddUser.HoverState.CustomBorderColor = System.Drawing.Color.Black;
@@ -135,11 +138,11 @@
             this.buttonAddUser.HoverState.Parent = this.buttonAddUser;
             this.buttonAddUser.Image = ((System.Drawing.Image)(resources.GetObject("buttonAddUser.Image")));
             this.buttonAddUser.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonAddUser.Location = new System.Drawing.Point(68, 418);
+            this.buttonAddUser.Location = new System.Drawing.Point(40, 418);
             this.buttonAddUser.Name = "buttonAddUser";
             this.buttonAddUser.PressedColor = System.Drawing.Color.Beige;
             this.buttonAddUser.ShadowDecoration.Parent = this.buttonAddUser;
-            this.buttonAddUser.Size = new System.Drawing.Size(180, 45);
+            this.buttonAddUser.Size = new System.Drawing.Size(208, 45);
             this.buttonAddUser.TabIndex = 2;
             this.buttonAddUser.Text = "Add User";
             this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
@@ -158,12 +161,12 @@
             this.buttonDashboard.HoverState.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.buttonDashboard.HoverState.Parent = this.buttonDashboard;
             this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
-            this.buttonDashboard.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonDashboard.Location = new System.Drawing.Point(68, 325);
+            this.buttonDashboard.ImageSize = new System.Drawing.Size(45, 45);
+            this.buttonDashboard.Location = new System.Drawing.Point(40, 315);
             this.buttonDashboard.Name = "buttonDashboard";
             this.buttonDashboard.PressedColor = System.Drawing.Color.Beige;
             this.buttonDashboard.ShadowDecoration.Parent = this.buttonDashboard;
-            this.buttonDashboard.Size = new System.Drawing.Size(180, 45);
+            this.buttonDashboard.Size = new System.Drawing.Size(208, 56);
             this.buttonDashboard.TabIndex = 0;
             this.buttonDashboard.Text = "Dashboard";
             this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
@@ -171,11 +174,11 @@
             // Administrator
             // 
             this.Administrator.AutoSize = true;
-            this.Administrator.Font = new System.Drawing.Font("Sitka Small", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Administrator.Font = new System.Drawing.Font("Sitka Small", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Administrator.ForeColor = System.Drawing.Color.White;
-            this.Administrator.Location = new System.Drawing.Point(27, 237);
+            this.Administrator.Location = new System.Drawing.Point(32, 237);
             this.Administrator.Name = "Administrator";
-            this.Administrator.Size = new System.Drawing.Size(272, 49);
+            this.Administrator.Size = new System.Drawing.Size(248, 44);
             this.Administrator.TabIndex = 1;
             this.Administrator.Text = "Administrator";
             // 
@@ -189,6 +192,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1179, 726);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_Dashboard1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 3);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1179, 722);
+            this.uC_Dashboard1.TabIndex = 0;
             // 
             // uC_AddUser1
             // 
@@ -208,18 +224,16 @@
             this.uC_ViewUser1.Size = new System.Drawing.Size(1176, 723);
             this.uC_ViewUser1.TabIndex = 1;
             // 
-            // uC_Dashboard1
+            // userNameLabel
             // 
-            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_Dashboard1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 3);
-            this.uC_Dashboard1.Name = "uC_Dashboard1";
-            this.uC_Dashboard1.Size = new System.Drawing.Size(1179, 722);
-            this.uC_Dashboard1.TabIndex = 0;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel2;
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Sitka Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLabel.ForeColor = System.Drawing.Color.White;
+            this.userNameLabel.Location = new System.Drawing.Point(91, 678);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(89, 39);
+            this.userNameLabel.TabIndex = 3;
+            this.userNameLabel.Text = "name";
             // 
             // Admin
             // 
@@ -255,5 +269,6 @@
         private Admin_UC.UC_Dashboard uC_Dashboard1;
         private Admin_UC.UC_ViewUser uC_ViewUser1;
         private Admin_UC.UC_AddUser uC_AddUser1;
+        private System.Windows.Forms.Label userNameLabel;
     }
 }

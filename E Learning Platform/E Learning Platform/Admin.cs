@@ -12,12 +12,28 @@ namespace E_Learning_Platform
 {
     public partial class Admin : Form
     {
-        
+        String user = "";
         public Admin()
         {
             InitializeComponent();
         }
 
+
+        public String ID
+        {
+            get 
+            {
+                return user.ToString(); 
+            }
+        }
+
+        public Admin(String username)
+        {
+            InitializeComponent();
+            userNameLabel.Text = username;
+            user = username;
+            uC_ViewUser1.ID = ID;
+        }
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = true;

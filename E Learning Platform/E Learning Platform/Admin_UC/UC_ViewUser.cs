@@ -15,9 +15,16 @@ namespace E_Learning_Platform.Admin_UC
     {
         function fn = new function();
         String qr;
+        String currentUser = "";
+
         public UC_ViewUser()
         {
             InitializeComponent();
+        }
+
+        public String ID
+        {
+            set { currentUser = value; }
         }
 
         private void UC_ViewUser_Load(object sender, EventArgs e)
@@ -40,8 +47,18 @@ namespace E_Learning_Platform.Admin_UC
 
         }
 
-        
+        String userName;
         private void DataGridViewUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try 
+            {
+                userName = DataGridViewUser.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+            }
+            catch { }
+        }
+
+        private void ButtonDelete_Click(object sender, EventArgs e)
         {
 
         }
