@@ -28,21 +28,27 @@ namespace E_Learning_Platform
 
         private void buttonBrowse_Click(object sender, EventArgs e)
         {
-            String imageLocation = "";
-               try {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+            /* String imageLocation = "";
+                try {
+                 OpenFileDialog dialog = new OpenFileDialog();
+                 dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
 
-                if(dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                    imageLocation = dialog.FileName;
+                 if(dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                     imageLocation = dialog.FileName;
 
-                    pictureBoxPhoto.ImageLocation = imageLocation;
-                }
+                     pictureBoxPhoto.ImageLocation = imageLocation;
+                 }
 
 
-            }
-            catch(Exception) {
-                MessageBox.Show("An error occured while browsing file.","",MessageBoxButtons.OK,MessageBoxIcon.Error);
+             }
+             catch(Exception) {
+                 MessageBox.Show("An error occured while browsing file.","",MessageBoxButtons.OK,MessageBoxIcon.Error);
+             } */
+
+            openFileDialog1.Filter = "Select image(*.jpg; *.png; *.Gif) | *.jpg; *.png; *.Gif";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBoxPhoto.Image = Image.FromFile(openFileDialog1.FileName);
             }
         }
 

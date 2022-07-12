@@ -78,6 +78,7 @@
             this.textBoxNationalist = new System.Windows.Forms.TextBox();
             this.ButtonSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.ClickHere = new System.Windows.Forms.LinkLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -594,6 +595,10 @@
             this.ClickHere.Text = "Click here.. To go to MainPage";
             this.ClickHere.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ClickHere_LinkClicked);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // StudentDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -710,5 +715,6 @@
         private System.Windows.Forms.Label label28;
         private Guna.UI2.WinForms.Guna2Button ButtonSubmit;
         private System.Windows.Forms.LinkLabel ClickHere;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

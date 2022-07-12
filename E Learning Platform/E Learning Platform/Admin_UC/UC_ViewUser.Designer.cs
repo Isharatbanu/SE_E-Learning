@@ -29,19 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ViewUser));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.DataGridViewUser = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.eLearningBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eLearning = new E_Learning_Platform.ELearning();
             this.SearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ButtonDelete = new Guna.UI2.WinForms.Guna2Button();
             this.Refresh = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Middlename = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fathername = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mothername = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bloodgrp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aadhar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nationality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SSC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HSC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Photo1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.UpdateButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DeleteButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearningBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Refresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label
@@ -60,82 +78,20 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // label1
+            // eLearningBindingSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(173, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Search";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.eLearningBindingSource.DataSource = this.eLearning;
+            this.eLearningBindingSource.Position = 0;
             // 
-            // DataGridViewUser
+            // eLearning
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DataGridViewUser.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DataGridViewUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridViewUser.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridViewUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewUser.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewUser.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewUser.EnableHeadersVisualStyles = false;
-            this.DataGridViewUser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewUser.Location = new System.Drawing.Point(39, 232);
-            this.DataGridViewUser.Name = "DataGridViewUser";
-            this.DataGridViewUser.RowHeadersVisible = false;
-            this.DataGridViewUser.RowHeadersWidth = 25;
-            this.DataGridViewUser.RowTemplate.Height = 24;
-            this.DataGridViewUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewUser.Size = new System.Drawing.Size(1102, 316);
-            this.DataGridViewUser.TabIndex = 5;
-            this.DataGridViewUser.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.DataGridViewUser.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewUser.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DataGridViewUser.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DataGridViewUser.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DataGridViewUser.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DataGridViewUser.ThemeStyle.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DataGridViewUser.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGridViewUser.ThemeStyle.HeaderStyle.Height = 4;
-            this.DataGridViewUser.ThemeStyle.ReadOnly = false;
-            this.DataGridViewUser.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewUser.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridViewUser.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.DataGridViewUser.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGridViewUser.ThemeStyle.RowsStyle.Height = 24;
-            this.DataGridViewUser.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewUser.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewUser_CellClick);
+            this.eLearning.DataSetName = "ELearning";
+            this.eLearning.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SearchBox
             // 
             this.SearchBox.Animated = true;
-            this.SearchBox.BackColor = System.Drawing.Color.HotPink;
+            this.SearchBox.BackColor = System.Drawing.SystemColors.HotTrack;
             this.SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchBox.DefaultText = "";
             this.SearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -172,7 +128,7 @@
             this.ButtonDelete.HoverState.Parent = this.ButtonDelete;
             this.ButtonDelete.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDelete.Image")));
             this.ButtonDelete.ImageSize = new System.Drawing.Size(25, 25);
-            this.ButtonDelete.Location = new System.Drawing.Point(956, 579);
+            this.ButtonDelete.Location = new System.Drawing.Point(1020, 18);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.ShadowDecoration.Parent = this.ButtonDelete;
             this.ButtonDelete.Size = new System.Drawing.Size(125, 39);
@@ -192,22 +148,198 @@
             this.Refresh.TabStop = false;
             this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdColumn,
+            this.Firstname,
+            this.Middlename,
+            this.Lastname,
+            this.Gender,
+            this.Fathername,
+            this.Mothername,
+            this.Mobile,
+            this.Email,
+            this.Bloodgrp,
+            this.Aadhar,
+            this.Nationality,
+            this.SSC,
+            this.HSC,
+            this.Photo1,
+            this.UpdateButton,
+            this.DeleteButton});
+            this.dataGridView1.Location = new System.Drawing.Point(39, 254);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 283);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // IdColumn
+            // 
+            this.IdColumn.DataPropertyName = "Id";
+            this.IdColumn.HeaderText = "Id";
+            this.IdColumn.MinimumWidth = 6;
+            this.IdColumn.Name = "IdColumn";
+            this.IdColumn.Width = 125;
+            // 
+            // Firstname
+            // 
+            this.Firstname.DataPropertyName = "Firstname";
+            this.Firstname.HeaderText = "Firstname";
+            this.Firstname.MinimumWidth = 6;
+            this.Firstname.Name = "Firstname";
+            this.Firstname.Width = 125;
+            // 
+            // Middlename
+            // 
+            this.Middlename.DataPropertyName = "Middlename";
+            this.Middlename.HeaderText = "Middlename";
+            this.Middlename.MinimumWidth = 6;
+            this.Middlename.Name = "Middlename";
+            this.Middlename.Width = 125;
+            // 
+            // Lastname
+            // 
+            this.Lastname.DataPropertyName = "Lastname";
+            this.Lastname.HeaderText = "Lastname";
+            this.Lastname.MinimumWidth = 6;
+            this.Lastname.Name = "Lastname";
+            this.Lastname.Width = 125;
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "Gender";
+            this.Gender.HeaderText = "Gender";
+            this.Gender.MinimumWidth = 6;
+            this.Gender.Name = "Gender";
+            this.Gender.Width = 125;
+            // 
+            // Fathername
+            // 
+            this.Fathername.DataPropertyName = "Fathername";
+            this.Fathername.HeaderText = "Fathername";
+            this.Fathername.MinimumWidth = 6;
+            this.Fathername.Name = "Fathername";
+            this.Fathername.Width = 125;
+            // 
+            // Mothername
+            // 
+            this.Mothername.DataPropertyName = "Mothername";
+            this.Mothername.HeaderText = "Mothername";
+            this.Mothername.MinimumWidth = 6;
+            this.Mothername.Name = "Mothername";
+            this.Mothername.Width = 125;
+            // 
+            // Mobile
+            // 
+            this.Mobile.DataPropertyName = "Mobile";
+            this.Mobile.HeaderText = "Mobile";
+            this.Mobile.MinimumWidth = 6;
+            this.Mobile.Name = "Mobile";
+            this.Mobile.Width = 125;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.Width = 125;
+            // 
+            // Bloodgrp
+            // 
+            this.Bloodgrp.DataPropertyName = "Bloodgrp";
+            this.Bloodgrp.HeaderText = "Blood group";
+            this.Bloodgrp.MinimumWidth = 6;
+            this.Bloodgrp.Name = "Bloodgrp";
+            this.Bloodgrp.Width = 125;
+            // 
+            // Aadhar
+            // 
+            this.Aadhar.DataPropertyName = "Aadhar";
+            this.Aadhar.HeaderText = "Aadhar no";
+            this.Aadhar.MinimumWidth = 6;
+            this.Aadhar.Name = "Aadhar";
+            this.Aadhar.Width = 125;
+            // 
+            // Nationality
+            // 
+            this.Nationality.DataPropertyName = "Nationality";
+            this.Nationality.HeaderText = "Nationality";
+            this.Nationality.MinimumWidth = 6;
+            this.Nationality.Name = "Nationality";
+            this.Nationality.Width = 125;
+            // 
+            // SSC
+            // 
+            this.SSC.DataPropertyName = "SSC";
+            this.SSC.HeaderText = "SSC";
+            this.SSC.MinimumWidth = 6;
+            this.SSC.Name = "SSC";
+            this.SSC.Width = 125;
+            // 
+            // HSC
+            // 
+            this.HSC.DataPropertyName = "HSC";
+            this.HSC.HeaderText = "HSC";
+            this.HSC.MinimumWidth = 6;
+            this.HSC.Name = "HSC";
+            this.HSC.Width = 125;
+            // 
+            // Photo1
+            // 
+            this.Photo1.DataPropertyName = "Photo1";
+            this.Photo1.HeaderText = "Photo";
+            this.Photo1.MinimumWidth = 6;
+            this.Photo1.Name = "Photo1";
+            this.Photo1.Width = 125;
+            // 
+            // UpdateButton
+            // 
+            this.UpdateButton.HeaderText = "Update";
+            this.UpdateButton.MinimumWidth = 6;
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseColumnTextForButtonValue = true;
+            this.UpdateButton.Width = 125;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.HeaderText = "Delete";
+            this.DeleteButton.MinimumWidth = 6;
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseColumnTextForButtonValue = true;
+            this.DeleteButton.Width = 125;
+            // 
             // UC_ViewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Honeydew;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Refresh);
             this.Controls.Add(this.ButtonDelete);
             this.Controls.Add(this.SearchBox);
-            this.Controls.Add(this.DataGridViewUser);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
             this.Name = "UC_ViewUser";
             this.Size = new System.Drawing.Size(1179, 726);
             this.Load += new System.EventHandler(this.UC_ViewUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearningBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eLearning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Refresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,10 +349,28 @@
 
         private System.Windows.Forms.Label label;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2DataGridView DataGridViewUser;
         private Guna.UI2.WinForms.Guna2TextBox SearchBox;
         private Guna.UI2.WinForms.Guna2Button ButtonDelete;
         private new System.Windows.Forms.PictureBox Refresh;
+        private System.Windows.Forms.BindingSource eLearningBindingSource;
+        private ELearning eLearning;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Firstname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Middlename;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fathername;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mothername;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Bloodgrp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aadhar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nationality;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SSC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HSC;
+        private System.Windows.Forms.DataGridViewImageColumn Photo1;
+        private System.Windows.Forms.DataGridViewButtonColumn UpdateButton;
+        private System.Windows.Forms.DataGridViewButtonColumn DeleteButton;
     }
 }
